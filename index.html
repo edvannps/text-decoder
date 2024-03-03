@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/reset.css" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <title>Decodificador de Textos</title>
+  </head>
+  <body>
+    <header>
+      <section class="content_header">
+        <div class="content_header__contacts">
+          <div class="content_header__contacts___logo">
+            <img src="assets/images/logo_alura.svg" alt="Logotipo da Alura" />
+          </div>
+          <div class="content_header__contacts___social">
+            <a href="https://www.linkedin.com/in/edvan-sabino/" target="_blank"
+              ><img
+                src="assets/images/logo_linkedin.png"
+                alt="Logotipo do Linkedin"
+            /></a>
+            <a href="https://github.com/edvannps" target="_blank"
+              ><img
+                src="assets/images/logo_github.png"
+                alt="Logotipo do Github"
+            /></a>
+          </div>
+        </div>
+        <div>
+          <h1>Decodificador de Textos</h1>
+        </div>
+      </section>
+    </header>
+    <main class="scope">
+      <section class="encrypted_field__scope">
+        <textarea
+          name="text_content"
+          class="input_encrypted__field"
+          placeholder="Digite seu texto..."
+        ></textarea>
+        <div class="alert_input__encrypted___field">
+          <img src="assets/images/exclamacao.svg" alt="Ponto de Exclamação" />
+          <p>Apenas letras minúsculas e sem acentos!</p>
+        </div>
+        <div class="input_encrypted__field___button">
+          <button
+            class="text_field__button"
+            id="btn_encoder"
+            onclick="btnEncrypt()"
+          >
+            Criptografar
+          </button>
+          <button
+            class="text_field__button"
+            id="btn_decoder"
+            onclick="btnDecrypt()"
+          >
+            Descriptografar
+          </button>
+        </div>
+      </section>
+      <section class="encrypted_field__scope">
+        <div class="decrypted_message__area">
+          <h2 class="tittle_decrypted__area">Nenhuma mensagem encontrada</h2>
+          <p class="decrypted_text__message___area">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+        <div class="container_decrypted__area___output">
+          <textarea
+            name="encoding-result"
+            class="output_decrypted__field"
+            readonly="true"
+            placeholder
+          ></textarea>
+          <button
+            class="output_text__button"
+            id="copy_result"
+            onclick="copy_output_text()"
+          >
+            Copiar
+          </button>
+          <button
+            class="output_text__button"
+            id="clear_result"
+            onclick="clear_output_text()"
+          >
+            Limpar
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer_description">
+      <p>&copy developed by Edvan Sabino</p>
+      <p>challenge ONE - Oracle Next Education & Alura</p>
+    </footer>
+    <script src="assets/scripts/scripts.js"></script>
+  </body>
+</html>

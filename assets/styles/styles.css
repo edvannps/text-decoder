@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Squada+One&display=swap');
+
+:root {
+    --primary-color: #F2A999;
+    --secondary-color: #261311;
+    --tertiary-color: #A1BBBD;
+    --quaternary-color: #658C7A;
+    --quinary-color: #BF6956;
+    --senary-color: #8EBFA8;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: var(--primary-color);
+    font-family: 'Squada One', sans-serif;
+}
+
+.content_header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 -4rem 0;
+}
+
+.content_header__contacts{
+    display: flex;
+    width: auto;
+    margin: 2rem 0;
+    box-sizing: border-box;
+    justify-content:space-between;
+    
+}
+
+.content_header__contacts___logo {
+    
+    margin-left: .25rem;
+    justify-content: flex-start;
+}
+
+.content_header__contacts___social {
+    display: flex;
+    margin-right: 5%;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+h1 {
+    color: var(--quaternary-color);
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 0 0 0.5rem var(--secondary-color);
+    margin: 1rem 0 1rem 3rem;
+}
+
+.scope {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: -3rem;
+}
+
+.encrypted_field__scope {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    margin: 0 0 0 4rem;
+}
+
+.input_encrypted__field, .output_decrypted__field {
+    resize: none;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin: 1rem 0 1rem 0;
+}
+
+.input_encrypted__field {
+    background: var(--tertiary-color);
+    border: none;
+    width: 90%;
+    height: 70vh;
+    margin: 4rem 0 0 2rem;
+}
+
+.input_encrypted__field:focus::placeholder {
+    color: var(--secondary-color);
+}
+
+.alert_input__encrypted___field {
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    margin-left: 1.5rem;
+    gap: .5rem;
+}
+
+.alert_input__encrypted___field img {
+    width: 1.2rem; 
+}
+
+.input_encrypted__field___button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    cursor: pointer;
+    margin: 0 2rem 0 1rem;
+}
+
+.text_field__button {
+    width: 328px;
+    height: 67px;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 5px 8px 15px var(--secondary-color);
+}
+
+#btn_encoder {
+    font-family: 'Bakbak One', sans-serif;
+    background-color: var(--quaternary-color);
+    color: var(--secondary-color);
+}
+
+#btn_decoder {
+    font-family: 'Bakbak One', sans-serif;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+#btn_encoder:hover {
+    transition: .5s;
+    background-color: var(--tertiary-color);
+    color: var(--quaternary-color);
+}
+
+#btn_decoder:hover {
+    transition: .5s;
+    background-color: var(--quaternary-color);
+    color: var(--tertiary-color);
+}
+
+.container_decrypted__area {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 35%;
+}
+
+.decrypted_message__area {
+    position: absolute;
+    flex-wrap: wrap;
+    margin: 3rem 0 0 10rem;
+    justify-content: center;
+}
+
+.tittle_decrypted__area {
+    padding: 2rem;
+    align-self: start;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 2rem;
+    text-shadow: 0 0 0.5rem var(--secondary-color);
+    margin: 0  0 -2rem 0.5rem;
+}
+
+.decrypted_text__message___area {
+    margin: 0 12rem 0 1rem;
+    padding: 1rem;
+    text-align: center;    
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 1.5rem;
+}
+
+.container_decrypted__area___output {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+}
+
+.output_decrypted__field {
+    background: var(--tertiary-color);
+    border: none;
+    width: 65%;
+    height: 90vh;
+    box-shadow: 0 24px 32px 8px rgba(26, 13, 11, 0.2);
+}
+
+.output_decrypted__field::placeholder {
+    height: 80vh;
+    background: url(/assets/images/detective_image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.output_text__button {
+    width: 328px;
+    height: 67px;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 5px 8px 15px var(--secondary-color);
+}
+
+#copy_result {
+    font-family: 'Bakbak One', sans-serif;
+    background: var(--quaternary-color);
+    color: var(--secondary-color);
+    position: relative;
+    bottom: 25vh;
+}
+
+#clear_result {
+    font-family: 'Bakbak One', sans-serif;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    position: relative;
+    bottom: 20vh;
+}
+
+#copy_result:hover {
+    transition: .5s;
+    background-color: var(--senary-color);
+    color: var(--quinary-color);
+}
+
+#clear_result:hover {
+    transition: .5s;
+    background-color: var(--quaternary-color);
+    color: var(--tertiary-color);
+}
+
+.footer_description {
+    color: var(--secondary-color);
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: .2rem 0.2rem 1rem var(--senary-color);
+    text-align: center;
+    /* margin: 0 0; */
+}
+
+/* Responsive Design Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        width: auto;
+        box-sizing: border-box;
+    }
+
+    .scope {
+        display: block;
+    }
+
+    .encrypted_field__scope {
+        width: 100%;
+        margin: 0;
+    }
+
+    .input_encrypted__field {
+        width: 80%;
+    }
+
+    .container_decrypted__area___output {
+        width: 100%;
+        margin: 2rem 0 0 0;
+    }
+
+    .output_decrypted__field {
+        width: 80%;
+        
+    }
+
+    .tittle_decrypted__area {
+        font-family: 'Bakbak One', sans-serif;
+        font-size: 2.5rem;
+        text-shadow: 0 0 0.5rem var(--secondary-color);
+        text-align: center;
+        margin: 0  10rem -2rem 0;
+    }
+
+    .decrypted_text__message___area {
+        font-family: 'Bakbak One', sans-serif;
+        font-size: 1.5rem;
+        padding: 1rem;
+        text-align: center;
+        margin: 0 8rem 0 0;
+    }
+
+    .alert_input__encrypted___field {
+        align-items: center;
+        margin-left: 3rem;
+    }
+}
+
+/* Responsive Design Mobile */
+@media screen and (max-width: 767px) {
+    body {
+        width: auto;
+        box-sizing: border-box;
+    }
+
+    .scope {
+        display: block;
+    }
+
+    .encrypted_field__scope, .encrypted_field__scope {
+        width: 100%;
+        margin: 0;
+    }
+
+    .encrypted_field__scope {
+        display: inline-block;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 1rem 0 2rem 0;
+        justify-content: center;
+    }
+
+    .input_encrypted__field {
+        max-width: 80%;
+        justify-content: center;
+        margin: 2.5rem 1rem 0 1.2rem;
+    }
+
+    .alert_input__encrypted___field{
+        justify-content: center;
+        margin: 1rem auto;
+    }
+    .input_encrypted__field___button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_decrypted__area___output {
+        width: 100%;
+        margin: 0;
+    }
+
+    .output_decrypted__field {
+        width: 80%;
+    }
+
+    .tittle_decrypted__area {
+        font-family: 'Bakbak One', sans-serif;
+        font-size: 2rem;
+        text-shadow: 0 0 0.5rem var(--secondary-color);
+        text-align: center;
+        justify-content: space-around;
+        margin: 0  5rem 0 -4rem;
+    }
+
+    .decrypted_text__message___area {
+        font-family: 'Bakbak One', sans-serif;
+        font-size: 1rem;
+        padding: 1rem;
+        align-items: center;
+        text-align: center;
+        margin: 0 5rem 0 -4rem;
+    }
+}
