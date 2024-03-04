@@ -146,6 +146,16 @@ h1 {
     color: var(--tertiary-color);
 }
 
+.decrypted_field__scope {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    margin: 0 0 0 4rem;
+}
+
 .container_decrypted__area {
     display: inline-flex;
     flex-direction: column;
@@ -313,7 +323,7 @@ h1 {
         display: block;
     }
 
-    .encrypted_field__scope, .encrypted_field__scope {
+    .encrypted_field__scope, .decrypted_field__scope {
         width: 100%;
         margin: 0;
     }
