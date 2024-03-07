@@ -206,12 +206,13 @@ h1 {
 
 .output_decrypted__field::placeholder {
     height: 80vh;
-    background-image: url(../images/detective_image.png);
+    background-image:url(../images/detective_image.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 50%;
+    background-size: 70%;
     color: var(--secondary-color);
     text-align: center;
+    border: none !important;
 }
 
 .output_text__button {
