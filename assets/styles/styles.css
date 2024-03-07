@@ -206,7 +206,7 @@ h1 {
 
 .output_decrypted__field::placeholder {
     height: 80vh;
-    background: url("https://github.com/edvannps/text-decoder/blob/main/assets/images/detective_image.png");
+    background-image: url("https://github.com/edvannps/text-decoder/blob/main/assets/images/detective_image.png");
     background-repeat: no-repeat;
     background-position: center;
     color: var(--secondary-color);
